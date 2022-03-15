@@ -1,0 +1,62 @@
+<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<Header>
+		<Title>Acordeon de Bootstrap</Title>
+		<Author>Sartharian</Author>
+		<Shortcut>bs-accordion</Shortcut>
+		<Description>Bootstrap 5 snippet - accordion</Description>
+		<SnippetTypes>
+			<SnippetType>Expansion</SnippetType>
+		</SnippetTypes>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Literal>
+				<ID>indicativo</ID>
+				<ToolTip></ToolTip>
+				<Default>accordionExample</Default>
+			</Literal>
+		</Declarations>
+		<Code Language="html">
+			<![CDATA[
+            <div class="accordion" id="$indicativo$">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="head1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cuerpo1" aria-expanded="false" aria-controls="collapseOne">
+                    Accordion #1
+                  </button>
+                </h2>
+                <div id="cuerpo1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="$indicativo$" style="">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="head2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cuerpo2" aria-expanded="false" aria-controls="cuerpo2">
+                    Accordion #2
+                  </button>
+                </h2>
+                <div id="cuerpo2" class="accordion-collapse collapse" aria-labelledby="head2" data-bs-parent="$indicativo$">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="head3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cuerpo3" aria-expanded="false" aria-controls="cuerpo3">
+                    Accordion #3
+                  </button>
+                </h2>
+                <div id="cuerpo3" class="accordion-collapse collapse" aria-labelledby="head3" data-bs-parent="$indicativo$">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+		  ]]>
+		</Code>
+	</Snippet>
+</CodeSnippet>

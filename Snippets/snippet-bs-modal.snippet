@@ -1,0 +1,48 @@
+<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<Header>
+		<Title>modal de Bootstrap</Title>
+		<Author>Sartharian</Author>
+		<Shortcut>bs-modal</Shortcut>
+		<Description>Bootstrap 5 snippet - modal</Description>
+		<SnippetTypes>
+			<SnippetType>Expansion</SnippetType>
+		</SnippetTypes>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Literal>
+				<ID>indicador</ID>
+				<ToolTip>variable de acceso al dom</ToolTip>
+				<Default>nuevomodal</Default>
+			</Literal>
+			<Literal>
+				<ID>titulo</ID>
+				<ToolTip>Encabezado del modal</ToolTip>
+				<Default>Nuevo modal</Default>
+			</Literal>
+		</Declarations>
+		<Code Language="html">
+			<![CDATA[
+			<div id="modal_$indicador$" class="modal fade">
+			  <div class="modal-dialog" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title">$titulo$</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true"></span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+					<p>Hola mundo</p>
+				  </div>
+				  <div class="modal-footer">
+				  	<button type="button" class="btn btn-default" data-bs-dismiss="modal">Volver</button>
+					<button type="button" class="btn btn-primary">Confirmar</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  ]]>
+		</Code>
+	</Snippet>
+</CodeSnippet>
