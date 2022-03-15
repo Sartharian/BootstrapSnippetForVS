@@ -8,9 +8,9 @@ Provee una lista de snippets para incorporar en alguna versión de Visual Studio
 
 Menú Herramientas > Administrador de fragmentos de código > Botón "Importar"
 
-# Utilización
+## Utilización:
 
 ```
 bs-cdn 
-.. <em>(dibujará las etiquetas contenidas en dicho snippet)</em>
+<em>(dibujará las etiquetas contenidas en dicho snippet)</em>
 ```
